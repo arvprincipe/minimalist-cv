@@ -218,6 +218,11 @@
         "Almacenamiento de Datos",
         "Backend"
       ]
+    },
+    {
+      "name": "React Native",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
     }
   ],
   "languages": [
