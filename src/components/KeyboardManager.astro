@@ -73,7 +73,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
     hotkey: `ctrl+${firstLetter === 'W' ? 'Z': firstLetter}`
   }
 })
-console.log(profilesInfo)
+
 ---
 
 <footer id="normal-footer" class="no-print">
@@ -123,7 +123,6 @@ console.log(profilesInfo)
   const hotkeypad = new HotKeyPad()
   const info = hotkeypad.instance.getAttribute("data-info") ?? "[]"
   const parsedInfo = JSON.parse(info) as Info[]
-  console.log('parsedInfo: ', parsedInfo);
 
   const data = parsedInfo.map(
     ({ url, hotkey, icon, id, section, title }) => {
@@ -139,7 +138,7 @@ console.log(profilesInfo)
       }
     }
   )
-  console.log( data)
+
   hotkeypad.setCommands([
     {
       id: "print",
