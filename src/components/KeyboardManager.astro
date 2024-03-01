@@ -40,6 +40,23 @@ const SOCIAL_ICONS: SocialIcon = {
     d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
   ></path></svg
 >
+`,
+Web: `<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10"></circle>
+  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path
+    d="M2 12h20"></path>
+</svg>
+
 `
 }
 
@@ -53,9 +70,10 @@ const profilesInfo = profiles.map(({ network, url }) => {
     title: `Visitar ${network}`,
     url,
     icon,
-    hotkey: `ctrl+${firstLetter}`
+    hotkey: `ctrl+${firstLetter === 'W' ? 'Z': firstLetter}`
   }
 })
+console.log(profilesInfo)
 ---
 
 <footer id="normal-footer" class="no-print">
@@ -105,6 +123,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
   const hotkeypad = new HotKeyPad()
   const info = hotkeypad.instance.getAttribute("data-info") ?? "[]"
   const parsedInfo = JSON.parse(info) as Info[]
+  console.log('parsedInfo: ', parsedInfo);
 
   const data = parsedInfo.map(
     ({ url, hotkey, icon, id, section, title }) => {
@@ -120,6 +139,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
       }
     }
   )
+  console.log( data)
   hotkeypad.setCommands([
     {
       id: "print",

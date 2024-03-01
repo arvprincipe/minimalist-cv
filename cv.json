@@ -16,6 +16,11 @@
     },
     "profiles": [
       {
+        "network": "Web",
+        "username": "arvprincipe",
+        "url": "https://www.arvprincipe.com/"
+      },
+      {
         "network": "LinkedIn",
         "username": "arvprincipe",
         "url": "https://linkedin.com/in/arvprincipe"

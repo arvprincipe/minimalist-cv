@@ -7,6 +7,7 @@ import X from "@/icons/X.astro"
 import LinkedIn from "@/icons/LinkedIn.astro"
 import GitHub from "@/icons/GitHub.astro"
 import WorldMap from "@/icons/WorldMap.astro"
+import Web from "@/icons/WorldMap.astro"
 import type { SocialIcon } from "@/types"
 
 const { name, label, image, location, profiles, phone, email } = basics
@@ -16,6 +17,7 @@ const SOCIAL_ICONS: SocialIcon = {
   GitHub,
   LinkedIn,
   X,
+  Web
 }
 
 const linkedInfo = profiles.find(({ network }) => network === "LinkedIn")
@@ -64,7 +66,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
         {
           profiles.map(({ network, url, username }) => {
             const Icon = SOCIAL_ICONS[network]
-
+            if(network === "Web") return null
             return (
               <a
                 href={url}
