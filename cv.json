@@ -2,11 +2,11 @@
   "basics": {
     "name": "Alex Becerra Principe",
     "label": "Full Stack Developer con más de 5 años de experiencia en el mundo de la Programación",
-    "image": "/me.jpg",
+    "image": "/me-profile-cmp.jpg",
     "email": "arvprincipe.info@gmail.com",
     "phone": "+51 96100000",
     "url": "https://www.arvprincipe.com",
-    "summary": "+5 años de experiencia como Desarrollador Web. Actualmente trabajo como desarrollador full stack  Javascript y lider técnico en Avatar Global. Vivo en Lima, Perú. He trabajado en diferentes proyectos: desde crear un dashboard hasta crear sitios e-commerce para ventas online. Además, comparto contenido de programación por mis redes sociales.",
+    "summary": "+5 años de experiencia como Desarrollador Web. Actualmente trabajo como desarrollador full stack  Javascript y lider técnico en Avatar Global. Soy de Perú. He trabajado en diferentes proyectos: desde crear un dashboard hasta crear sitios e-commerce para ventas online segun los requerimientos de los clientes.",
     "location": {
       "address": "",
       "postalCode": "15113",
@@ -39,11 +39,20 @@
   },
   "work": [
     {
+      "name": "Claro Colombia",
+      "position": "Lead Frontend",
+      "url": "",
+      "startDate": "2025-01-01",
+      "endDate": null,
+      "summary": "Lideré el desarrollo de la tienda virtual de Claro Colombia tanto B2B como B2C. Fomenté buenas prácticas y mejoras en la cultura de rendimiento, además de la entrega rápida de valor a los usuarios.",
+      "highlights": ["Started the company"]
+    },
+    {
       "name": "Bosch México",
       "position": "Lead Frontend",
       "url": "https://www.boschenlinea.com/boschmx/",
       "startDate": "2023-01-03",
-      "endDate": null,
+      "endDate": "2024-01-03",
       "summary": "Lideré el desarrollo de la tienda virtual de Bosch México donde migramos la tienda a una mas flexible y optimizada. Fomenté buenas prácticas y mejoras en la cultura de rendimiento, además de la entrega rápida de valor a los usuarios.",
       "highlights": ["Started the company"]
     },
